@@ -33,9 +33,5 @@ p {
 
 @media (min-width: 768px) {
   .site-wrapper {
-    background-image: url('../images/white_lines.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 }
