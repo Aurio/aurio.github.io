@@ -14,11 +14,11 @@ body {
 h1 {
   font-family: 'Major Mono Display', monospace;
   font-size: 150px;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 p {
-  color: #FFFFFF;
+  color: #000000;
 }
 
 .site-wrapper {
