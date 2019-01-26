@@ -1,6 +1,7 @@
 html, body {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,7 +22,17 @@ p {
   color: black;
 }
 
-.site-wrapper {
+
+/* get rid of firefox dots */
+a:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.cover-container {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -29,6 +40,16 @@ p {
   text-align: center;
   position: relative;
   border: none;
+}
+
+
+#developed-by {
+  margin: 0px 0px 0px 0px;
+}
+
+#cover-header {
+  height: 25%;
+  margin-bottom: 1px;
 }
 
 /*
@@ -57,3 +78,67 @@ p {
   to{ bottom:0; opacity:1 }
 }
 /* end animation */
+
+
+
+#countdown {
+  font-size: 40px;
+}
+
+
+#buttonScroll {
+  font-size: 20px;
+  font-family: 'Major Mono Display', monospace;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+}
+
+
+.site-body-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-colot: #f1f1f1;
+  height: 100vh;
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  overflow: auto;
+}
+
+.nav-bar li a {
+  display: block;
+  width: 190px;
+  color: #000;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.nav-bar li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+.active {
+  background-color: #baffcc;
+  color: white;
+}
+
+.site-body-container p {
+  border: 1px solid green;
+  font-family: 'Krub', sans-serif;
+  font-size: 20px;
+  width: 50vh;
+}
+  

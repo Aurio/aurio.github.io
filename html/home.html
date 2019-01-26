@@ -16,12 +16,12 @@
 
 
     <!-- scripts (for future) -->
-    <!--script type="text/javascript" src="../js/SCRIPTNAME"></script-->
+    <script type="text/javascript" src="../js/home.js"></script>
 
     <!-- link fonts here -->
     <!-- example from google fonts below -->
     <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet"> 
-
+    <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet"> 
 
 
     <!--allows users on mobile to launch the page full-screen-->
@@ -29,8 +29,7 @@
     <meta name="mobile-web-app-capable" content="yes">
 
     <!--reserved for favicon-->
-    <!--link rel="shortcut icon" href="../images/full_images/happy.png" type="image/x-icon"-->
-    <!--link rel="icon" href="../images/full_images/happy.png" type="image/x-icon"-->
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
   
   </head>
 
@@ -43,13 +42,36 @@
           <div class="cover">
         
             <h1 class="cover-heading" id="cover-header">AURIO</h1>
-            <p>Developed by Project JAGER</p>
+            <p id="developed-by">Developed by Project JAGER</p>
+
+            <div class="countdown-wrapper">
+
+              <p id="countdown"></p>
+            </div>
 
             <div class="button-wrapper">
-              <a target="_self" class="buttonScroll">READ MORE</a>
+              <button id="buttonScroll" onclick="scrollToSiteBody()">READ MORE</button>
             </div>
 
           </div>
+        </div> <!-- end of cover -->
+
+
+        <div class="site-body-container" id="site-body">
+
+          <div class="nav-bar">
+            <ul>
+              <li class="active"><a>Home</a></li>
+              <li><a>Project Phase 1</a></li>
+              <li><a>Team</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div> <!-- end of nav-bar -->
+
+          <div class="site-body">
+            <p>This is the site body.</p>
+
+          </div> <!-- end of site-body -->
         </div>
       </div>
     </div>
