@@ -12,14 +12,19 @@ function displayTimer() {
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60 ));
     var seconds = Math.floor ((distance % (1000 * 60)) / 1000);
+ 
+    padded_days = ("0"+days).slice(-2);
+    padded_hours = ("0"+hours).slice(-2);
+    padded_minutes = ("0"+minutes).slice(-2);
+    padded_seconds = ("0"+seconds).slice(-2);
 
     /* display result */
-    document.getElementById("countdown").innerHTML = days + "d " + hours + ":" + minutes + ":"+ seconds;
+    document.getElementById("countdown").innerHTML = padded_days + "d " + padded_hours + ":" + padded_minutes + ":"+ padded_seconds;
 
     /* when count down is finished */
     if (distance < 0) {
       clearInterval(update);
-      document.getElementById("countdown").innerHTML = "PROJECT PHASE 1 POSTED";
+      document.getElementById("countdown").innerHTML = "Phase 1 posted";
     }
   }, 1000);
 }
@@ -32,10 +37,42 @@ function scrollToSiteBody() {
 }
 
 
+function hidePage(pagename) {
+  var page = document.getElementById(pagename);
+  page.style.display='none';
+  
+  /* note: this does not work for IE prior to v10 */
+  document.getElementById("link-"+pagename).classList.remove('active');
+  
+}
+
+function showPage(pagename) {
+  document.getElementById(pagename).style.display='block';
+}
+
+function hideAllPages() {
+  hidePage('home');
+  hidePage('phase-one');
+  hidePage('team');
+  hidePage('contact-us');
+}
+
+function showOnePage(pagename) {
+  hideAllPages();
+  showPage(pagename);
+  
+  /* note: this does not work for IE prior to v10 */
+  document.getElementById("link-"+pagename).classList.add('active');
+}
+
+
 /* main */
 function run() {
 
   displayTimer();
+  
+  /* set home in nav bar as active */
+  document.getElementById('link-home').classList.add('active');
 
 }
 

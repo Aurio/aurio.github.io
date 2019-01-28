@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/home.css">
 
 
-    <!-- scripts (for future) -->
+    <!-- scripts -->
     <script type="text/javascript" src="../js/home.js"></script>
 
     <!-- link fonts here -->
@@ -50,7 +50,7 @@
             </div>
 
             <div class="button-wrapper">
-              <button id="buttonScroll" onclick="scrollToSiteBody()">READ MORE</button>
+              <a id="buttonScroll" onclick="scrollToSiteBody()">READ MORE</a>
             </div>
 
           </div>
@@ -61,18 +61,75 @@
 
           <div class="nav-bar">
             <ul>
-              <li class="active"><a>Home</a></li>
-              <li><a>Project Phase 1</a></li>
-              <li><a>Team</a></li>
-              <li><a>Contact Us</a></li>
+              <li><a id="link-home" onclick="showOnePage('home');return false;">Home</a></li>
+              <li><a id="link-phase-one" onclick="showOnePage('phase-one');return false;">Project Phase 1</a></li>
+              <li><a id="link-team" onclick="showOnePage('team');return false;">Team</a></li>
+              <li><a id="link-contact-us" onclick="showOnePage('contact-us');return false;">Contact Us</a></li>
             </ul>
           </div> <!-- end of nav-bar -->
 
           <div class="site-body">
-            <p>This is the site body.</p>
+
+            <div class="home animate-bottom" id="home">
+              <h1> Welcome to AURIO </h1>
+              <p> We are the world's leading manufacturer of the simplistic Digital Audio Workstation (DAW), AURIO&trade;. The AURIO&trade; workstation is like no other DAW available on the market. </p>
+              <p>Carefully designed from start to finish by the industry's finest computer scientists, all of who graduated from the cutting-edge University of Victoria, AURIO&trade; will forever change the way you produce music. </p>
+            </div>
+
+            <div class="phase-one animate-bottom" id="phase-one">
+              <h1>Project Phase 1 </h1>
+
+              <h2>Introduction + Mandate</h2>
+              <p>The purpose of AURIO&trade; is to create a simplified DAW that gives the user control of their desired experience. The goal is to provide users of DAWs (from beginner level up to advanced) with a "less cluttered" experience while using audio editing software. Current software on the market requires a lot of learning before being able to use extensively.</p>
+              <p>Our aim is to give users an empowering experience. We started with a basic DAW that has a STUPIDLY EASY to understand interface, then allowed users to download and design their own plug-ins. This allows users to tailor their experience to only the functions the need or want to use.<p>
+              <p>Time to complete a task should be low. Time to learn a task should be low.</p>
+
+              <h2>Key Stakeholders + Main Goals</h2>
+              <p>With AURIO&trade;, we aim to cater to a number of various user groups. Whether or not you are a total beginner to music, have played an instrument for a couple of years, or are a professional producer or DJ, AURIO&trade; is designed to accommodate your individual needs.</p>
+              <p>Key stakeholders of the AURIO&trade; audio workstation include:</p>
+              <ul>
+                <li>users who are not familiar with DAWs and are looking to get started</li>
+                <li>users who are comfortable with another DAW (or DAWs) and are looking to switch to AURIO&trade;</li>
+                <li>users who just want to "mess around"</li>
+                <li>users who are looking to use AURIO&trade; for professional gigs</li>
+                <li>users who are newcomers to music (ie. do not know music theory and do not play any instruments)</li>
+                <li>users who have studied music academically or who are already familiar with one or more musical instruments</li>
+              </ul>
+
+
+              <h2>User Profiles</h2>
+
+
+
+              <h2>User Requirements</h2>
+
+
+              <h2>Scenarios</h2>
+
+
+
+              <h2>Hierarchical Task Analysis</h2>
+
+
+              <h2>Contributions</h2>
+            </div> <!-- end of phase-one-->
+
+            <div class="team animate-bottom" id="team">
+            </div> <!-- end of team -->
+
+
+            <div class="contact-us animate-bottom" id="contact-us">
+            </div> <!-- end of contact-us-->
+
 
           </div> <!-- end of site-body -->
-        </div>
+
+          <p class="breaker"></p>
+
+          <div class="footer" id="footer">
+            <p>This project is purely ficticious and done for an assignment for SENG 310 at the Univerisity of Victoria.</p>
+          </div>
+        </div> <!-- end of site body container -->
       </div>
     </div>
   </body>
