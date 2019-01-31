@@ -242,3 +242,8 @@ button::-moz-focus-inner {
 .team img {
   border-radius: 20px;
 }
+
+
+.contact-us {
+  display: none;
+}
