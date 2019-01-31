@@ -226,7 +226,7 @@ button::-moz-focus-inner {
 }
 
 .team {
-  border: 1px solid green;
   width: 45vh;
+  text-align: center;
 }
   
