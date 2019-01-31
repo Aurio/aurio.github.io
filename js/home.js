@@ -47,7 +47,13 @@ function hidePage(pagename) {
 }
 
 function showPage(pagename) {
-  document.getElementById(pagename).style.display='block';
+  var page = document.getElementById(pagename);
+  if(pagename=='team'){
+    page.style.display='flex';
+  } else {
+    page.style.display='block';
+  }
+    
 }
 
 function hideAllPages() {
