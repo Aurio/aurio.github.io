@@ -208,6 +208,10 @@ button::-moz-focus-inner {
   display: none;
 }
 
+.phase-two {
+  display: none;
+}
+
 .footer {
   height: 10vh;
   width: 100%;

@@ -59,6 +59,7 @@ function showPage(pagename) {
 function hideAllPages() {
   hidePage('home');
   hidePage('phase-one');
+  hidePage('phase-two');
   hidePage('team');
   hidePage('contact-us');
 }
