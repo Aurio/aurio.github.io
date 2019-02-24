@@ -24,7 +24,7 @@ function displayTimer() {
     /* when count down is finished */
     if (distance < 0) {
       clearInterval(update);
-      document.getElementById("countdown").innerHTML = "Phase 1 posted";
+      document.getElementById("countdown").innerHTML = "Phase II posted";
     }
   }, 1000);
 }
