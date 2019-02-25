@@ -410,27 +410,27 @@
 				
 				<h3>Edit Menu</h3>
 				<p>The Edit menu consists of drop-down items “Add audio track”, “Add MIDI track”, “Delete track”, “Split track” (control-T), “Join clips“, “Copy” (control-C), “Duplicate” (control-D), “Cut” (control-X), “Paste” (control-V), “Undo” (control-Z), “Redo” (control-Y), “Snap to Grid”, “Enable Quantization”, and “Quantize” (control-W), in that order.</p>
-				<img src="../images/AURIO - Edit Menu.png">
+				<img src="../images/AURIO - Edit Menu.PNG">
 				
 				<h3>Requirements: Add, delete, split, and join tracks</h3>
 				<p>If the user selects “Add audio track”, an audio track will be added to the workspace. It will be empty and it’s default input will be the built-in computer microphone (if any), or the most-recently plugged in microphone.</p>
 				<p>If the user selects “Add MIDI track”, a MIDI track will appear in the workspace. It will also be empty and it’s default input will be the computer’s keyboard (if any), or the most-recently plugged in MIDI controller.</p>
 				<p>If the user selects “Delete track” (or presses backspace or delete on their keyboard) and no track is selected in the workspace, a pop-up will appear saying “Cannot delete track: No track selected.”</p>
-				<img src="../images/AURIO - Delete Track Error.png">
+				<img src="../images/AURIO - Delete Track Error.PNG">
 				<p>If a track is selected when the user selects “Delete track” (or presses backspace or delete on their keyboard), a pop-up will appear asking the user if they are sure they wish to delete the track, and the track name will be given.</p>
-				<img src="../images/AURIO - Confirm Track Deletion.png">
+				<img src="../images/AURIO - Confirm Track Deletion.PNG">
 				<p>If the user selects “Split track” and no track is selected in the workspace, nothing will happen. If the user selects “Split track” when a track is selected, and if the marker falls on a clip in that selected track, then that clip will be split into two sections about the marker.</p>
 				<div class="row">
 					<div class="column">
-						<img src="../images/AURIO - Split Clip 1.png" style="width:25%">
-						<img src="../images/AURIO - Split Clip 2.png" style="width:25%">
+						<img src="../images/AURIO - Split Clip 1.PNG">
+						<img src="../images/AURIO - Split Clip 2.PNG" >
 					</div>
 				</div>
 				<p>If the user selects “Join clips”, the program will enter Join Mode. Once Join Mode is on, the item “Join clips” will become “Exit join mode” in the menu list. In order to exit Join Mode, the user can press the escape character on their keyboard, or select “Exit join mode”. Users can then select any two adjacent clips in a track and the program will join the clips into one and exit Join Mode. It is important to note that users cannot select clips across multiple tracks, or which are not adjacent. If the two clips have empty space between them, the empty space is included in the join, but will remain empty (no midi, no audio) in the merged clip.</p>
 				<div class="row">
 					<div class="column">
-						<img src="../images/AURIO - Join Clips 1.png" style="width:25%">
-						<img src="../images/AURIO - Join Clips 2.png" style="width:25%">
+						<img src="../images/AURIO - Join Clips 1.PNG" >
+						<img src="../images/AURIO - Join Clips 2.PNG" >
 					</div>
 				</div>
 				<p>During Join Mode, when a user hovers over any clip, the clip will become outlined in light blue. When the user’s mouse moves away from the clip, the highlight will disappear.</p>
@@ -440,8 +440,8 @@
 				<p>If the user selects “Duplicate” and no clip is selected, nothing happens. If there is a clip selected, a second copy of that clip will appear directly adjacent to the selected clip, and the copy will be automatically selected. If the copy of the clip overlaps with another clip, it will delete all parts of the other clip it overlaps with.</p>
 				<div class="row">
 					<div class="column">
-						<img src="../images/AURIO - Duplicate Clip 1.png" style="width:25%">
-						<img src="../images/AURIO - Duplicate Clip 2.png" style="width:25%">
+						<img src="../images/AURIO - Duplicate Clip 1.PNG" >
+						<img src="../images/AURIO - Duplicate Clip 2.PNG" >
 					</div>
 				</div>
 				<p>If the user selects “Cut” and no clip is selected, nothing happens. If there is a clip selected, that clip will be deleted from where it is and copied to the internal software.</p>
@@ -452,7 +452,7 @@
 				
 				<h3>Plugins Menu</h3>
 				<p>The plugins menu is a drop-down list with the items “Open TWYX”, and “View Installed Plugins”. If the user selects “Open TWYX”, a separate window will appear with AURIO’s plugin shop, TWYX.</p>
-				<img src="../images/AURIO - Plugins Menu.png">
+				<img src="../images/AURIO - Plugins Menu.PNG">
 				
 				<h3>Requirement: Ability to uninstall plugins</h3>
 				<p>If the user selects “View Installed Plugins”, a separate window will appear with all plugins which the user currently has installed. The name of each plugin will be listed along with a button beside each plugin which reads “Uninstall”. This allows users to easily uninstall plugins without having to hunt down specific files or worry about dependencies.</p>
@@ -504,8 +504,8 @@
 				<p>The entire timeline and workspace can be condensed and expanded horizontally by manipulating the slider just above the timeline. Sliding toward the minus sign (“-”) will condense the timeline such that bars are shown in much less space horizontally and the bar indicators are much closer together. Oppositely, sliding toward the plus sign (“+”) will expand the timeline horizontally, such that clips occupy more space horizontally and there is more space between the bar indicators.</p>
 				<div class="row">
 					<div class="column">
-						<img src="../images/AURIO - Zoom 1.png" style="width:25%">
-						<img src="../images/AURIO - Zoom 2.png" style="width:25%">
+						<img src="../images/AURIO - Zoom 1.PNG" >
+						<img src="../images/AURIO - Zoom 2.PNG" >
 					</div>
 				</div>
 				
@@ -513,8 +513,8 @@
 				<p>When the user’s mouse hovers on the upper right-hand corner of a clip, it will turn into a repeat symbol (a circular arrow which points toward itself). Once the cursor has changed to the repeat symbol, the user can drag that corner of the clip horizontally to continuously repeat or loop the clip.</p>
 				<div class="row">
 					<div class="column">
-						<img src="../images/AURIO - Clip Loop 1.png" style="width:25%">
-						<img src="../images/AURIO - Clip Loop 2.png" style="width:25%">
+						<img src="../images/AURIO - Clip Loop 1.PNG" >
+						<img src="../images/AURIO - Clip Loop 2.PNG" >
 					</div>
 				</div>
 				
@@ -562,7 +562,7 @@
 				<h3>Requirement: Ability to drag and drop samples and filters</h3>
 				<p>AURIO’s primary goal is ease-of-use, and what could be more intuitive than simply dragging something to its destination? Thus, AURIO is designed so that users can simply drag samples into their preferred track.</p>
 				<p>If the user drags a sound sample to an audio track, the track will become highlighted so that the user receives feedback on which track they are attempting to add the sample to. The sample will become a slightly transparent as the user drags it over the track; this allows the user to roughly see the length of the sample and place the starting point accurately on the track timeline.</p>
-				<img src="../images/AURIO - Sample Dragging.png">
+				<img src="../images/AURIO - Sample Dragging.PNG">
 				<p>Once the user lets go of the mouse (ie. stops dragging), the sample will appear fully coloured and labeled on the track timeline. If it overlaps with any other clips, the overlaps of the other clips will be truncated and the newly added clip will remain in its full length. If the user lets go of the clip anywhere that is not on an audio track, the greyed out block will disappear and nothing will happen.</p>
 				<p>If the user drags a sound sample to a MIDI track, the track will use the sound sample for its MIDI. A filter is automatically added that shows the audio waves of the sample and allows the user to select which parts of the sample they wish to use (by default, it is the whole sample).</p>
 				<img src="../images/MIDI_filters.png">
