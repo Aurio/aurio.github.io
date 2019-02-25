@@ -333,11 +333,284 @@
 
             </div> <!-- end of phase-one-->
 
+			
             <div class="phase-two animate-bottom" id="phase-two">
               <h1>Phase II: Design</h1>
-
-              <p>For the design phase of AURIO, Project Jager has chosen to put together a formal design document, which can be found <a title="AURIO Design Document" href="https://www.scribd.com/document/400403913/AURIO-Design-Document#from_embed"  style="text-decoration: underline;">here</a>, or read in the view below.</p><iframe class="scribd_iframe_embed" title="AURIO Design Document" src="https://www.scribd.com/embeds/400403913/content?start_page=1&view_mode=scroll&show_recommendations=false&access_key=key-KtEKtrmif8NbgQdATtyJ" data-auto-height="true" data-aspect-ratio="null" scrolling="no" width="100%" height="600" frameborder="0"></iframe>
-
+			  
+			  <h2>Introduction</h2>
+				<p>The number one goal of AURIO is to provide users with a DAW whose interface is intuitive and easy-to-learn. For us, “easy-to-learn” means that there are no critical commands buried three-layers deep in a drop-down menu, icons are preferred over extensive text, and the text that is required is not overly technical in terms. This allows users who are totally new to music production to begin mixing some beats well within a half-hour.</p>
+				<p>In addition to paring down the steep learning curve that most DAWs on the market today come with, AURIO aims to keep current DAWs’ complexity through its plugin-market, TWYX. Thus, more advanced users are able to easily add more functionality beyond the pre-installed basics. This will let advanced users match the complex functionality of other industry-standard DAWS -- but in a way that is much easier to use. AURIO’s TWYX design achieves just that. With a clearly-marked drop-down labeled “plugins”, the user can easily view their current plugins, uninstall any they no longer want, or open the online plugin-market, TWYX, to shop for new ones.</p>
+				<p>AURIO goes beyond simply providing a functional interface, however. User experience is valued just as highly as usability at Project Jager; as a result, AURIO is engineered to not only be a DAW but a creative experience. While the colour palette of AURIO is not yet fully refined, it is meant to be aesthetically pleasing while maintaining readability. For this reason, AURIO uses mostly neutral colours like greys, blacks, and white, and accent colours sparingly to draw the user’s attention to important items or changes on screen.</p>
+			  
+			  <h2>Conceptual Models and Interface Metaphors</h2>
+				<h3>Our Conceptual Model</h3>
+				<p>Many of AURIO’s tools are based on the conceptual model of direct manipulation. The most prominent examples used in AURIO are:
+			    <ul>
+					<li>Sliders</li>
+					<ul>
+						<li>Volume adjustment</li>
+						<li>Zooming in/out tracks</li>
+						<li>Filter curves</li>
+					</ul>
+					<li>Dragging and Dropping</li>
+					<ul>
+						<li>Directly add filters or sounds from the library by dragging them into the track window.</li>
+						<li>Moving track cursor to specific locations.</li>
+					</ul>
+				</ul>
+				These examples all give the user instant visual or auditory feedback on how their changes affect their composition or workspace. These controls allow room for the user to become more efficient in the tasks, speeding up workflow in AURIO and content creation.</p>
+				<p>AURIO primarily makes use of the conceptual model of “Giving Instructions”. Rarely do you find a facet in AURIO that tells the user what to do. Even in the tutorial, the AURIO experience is user directed, allowing creativity of the user to shape building and recording music. Due to the freedom to creativity that AURIO encourages, there is a plethora of options and commands the user can instruct the system to perform. Some specific examples of the Giving Instructions conceptual model are found in:
+				<ul>
+					<li>Pressing the record button and recording audio</li>
+					<li>Exporting the track to an audio file and choosing the file format</li>
+					<li>Creating new tracks with specified MIDI instruments</li>
+				</ul>
+			    These actions allow for quick interaction on repetitive tasks, reducing the time needed to complete common tasks.</p>
+				<p>AURIO also utilizes a micro conversational model. While using the application, users are prompted with text depending on what is being attempted. For example, if the user has not saved the project in a while, a non-intrusive prompt will appear on screen asking the user if they want to save the project. By making use of these polar questions, users have an effective “conversation” with AURIO without the annoyance of a chatbot or virtual assistant. Polar questions are also much more reliable as they have predetermined outcomes, as opposed to the complexity of having to parse multiple input arguments provided to the system. Thus, the user knows exactly what is going to happen for each of the choices provided.</p>
+				<p>The last conceptual model that AURIO implements is that of “Exploring and Browsing”. The libraries of AURIO are designed to allow new users to explore the variety of sounds and filters that they have at their disposal, while also allowing experts to quickly browse for what they need. Categories neatly divide the various items and search functions allow the user to narrow down what they are looking for. Additionally, AURIO features the TWYX plugin platform, which allows the user to browse and collect MIDI instruments, sounds and filters that they can then use in their projects. The browsing of the TWYX platform operates similarly to other online storefronts users may already be accustomed to, but ultimately TWYX is like browsing through a mail-in catalog. Handy shortcuts such as the search function elevate the browsing experience to be quick, specific and memorable. If the user wants to explore the TWYX page, handy tabs separate information into content that may be relevant to the user, such as “Featured”, “Top” and “Genres”.</p>
+			  
+			    <h3>Interface Metaphors</h3>
+				<p>AURIO’s workspace user interface is closely built on the physical desktop interface metaphor. The focal point of the user’s work, which is often the track display window, is always centered in the middle of the “desk”; most actions the user takes when editing are based on highlighting a track, then applying some tool located on the outside edges of the screen. This keeps with the desktop metaphor; any tool on the desk that is not currently being used is kept off to the side, away from the central workspace. </p>
+				<p>Furthermore, we could consider TWYX, AURIO’s plugin platform, to be additional storage space nearby the desk. There might be additional tools being stored that you don’t necessarily need right now, but in the case where the tools on your desk are insufficient for some task, you have the option to dig through the storage looking for something extra that could help. This has clear parallels to a user navigating to TWYX to look for extra functionality they would like to add to AURIO.</p>
+				<p>Additionally, TWYX can be considered as a digital music specific library. Each plugin has specific tags associated to it, for example genre and sound type. This gives the feeling of a true library where users can easily visit the “section” of plugins, presented alphabetically like a shelf for easy navigation. To be able to use a plugin users are required to “checkout” the plugin. Then, when they no longer want the use of a plugin, they “return” it back to the library. The user will be able to see what they have “checked out” to stay on top of installed plugins. </p>
+			  
+			  <h2>Configuration<h2>
+				<h3>Requirement: Ability to walk through a beginner tutorial</h3>
+				<p>When AURIO is first launched, the user will see the home screen with a pop-up asking if they would like to walk through a tutorial for beginners. The pop-up is displayed in the middle of the screen and the background is greyed out. This ensures that the tutorial pop-up is the main focal point. The pop-up also mentions that the tutorial can be viewed at any time in the future from the home menu.</p>
+				<img src="../images/home_screen_tutorial.png">
+				<p>Should the user select “YES”, AURIO will walk them through the basics of creating a new project; adding tracks; recording MIDI and audio; adjusting track volume, panning, and muting; browsing the library of sounds and filters; and saving the project. If the user selects “NO, THANKS”, the pop-up will disappear and they will be able to see the home screen underneath, which is described in more detail below.</p>
+				<p>The tutorial is highly interactive. A small pop-up or tooltip-like figure will appear beside a button and explain what that button does. The user will then be asked to click the button or interact with the window in order for the tutorial to progress. Buttons will be highlighted in light blue and the highlight will fade in and out to draw attention to the user, which is especially helpful for smaller or harder-to-find items.</p>
+				<p>When the user has completed the tutorial, they will be back at the home menu without the tutorial pop-up. Here, they will be able to choose to create a new project, open an existing project, walk through the tutorial again, or view AURIO’s settings. Each of these choices is encapsulated in a large, square panel or tile. Tiles were selected to reinforce the idea of ease-of-use; the user only has four choices and thus are less likely to become overwhelmed. Additionally, large rectangular shapes are very familiar to most people as they exist in many human structures (drawers and cupboards, elevator buttons, windows and doors). This familiarity may assist users in recognizing that each tile will take them down a unique route in the program, akin to how each drawer in a home is unique in what it contains, and each door will bring a person to a unique room.</p>
+				<img src="../images/home screen.png">
+				<h4>Because everything covered in the tutorial is written about lengthily in the rest of this document, we will omit a full tour of the tutorial as it would be mostly redundant.</h4>
+			  
+			  <h2>Workspace</h2>
+				<p>The workspace is designed to reduce the clutter of most other DAWs. Text is omitted where icons are just as explicit (such as the play, jump to beginning, and jump to end buttons). The screen is split into three main sections: the Menu bar at the top, libraries and filters on the left-hand side, and the primary workspace in the middle/right. Bright colours are used to draw attention to the most important items in the workspace such as MIDI and audio clips, the marker which indicates where the user is in the project, and record buttons.</p>
+				<img src="../images/unnamed.png">
+				<h3>Requirement: Ability to differentiate between audio and MIDI tracks</h3>
+				<p>Audio tracks are denoted with an ‘A’ to the left of the track name, while MIDI tracks are denoted with a ‘M’.</p>
+				
+				<h3>Requirement: Main Menu bar</h3>
+				<p>The main Menu bar is a horizontal list of drop-downs that sits at the top of the screen. It will contain the items “Home”, “File”, “Edit”, “plugins”, and “Help”.</p>
+				<p>Clicking on “Home” will bring users back to the home screen. If their project has not been saved, a pop-up will appear asking the user if they would like to save their work first. The background will be greyed out so as to draw the user’s attention to the dialogue. The user can then select “YES”, or “NO”.</p>
+				<img src="../images/would you like to save.png">
+				
+				<h3>File Menu</h3>
+				<p>The “File” button leads to a drop-down list of “Save” (control-S keyboard shortcut), “Save As”, “Open Recent”, “Open…” (control-O), “Export”, and “Exit” (control-Q), in that order.</p>
+				<img src="../images/FILE menu.png">
+				<p>Selecting “Save” will save the current project, unless this is the first save, in which case a “Save As” pop-up will appear. Selecting “Save As” will bring up a window where the user can select a file location and rename their project. The user can then select “Save” to save, or “Cancel” to get rid of the window without saving.</p>
+				<img src="../images/save as.png">
+				<p>If the user hovers or clicks on “Open Recent” from the “File” menu, a list of recent projects will be displayed, organized from most recent at the top to oldest at the bottom. The user can then click any of these projects to load the project into the workspace. Again, if their current workspace has not been saved, they will asked if they wish to save first.</p>
+				<img src="../images/open recent.png">
+				<p>If the user selects “Open..”, a window will appear where they can select a project (with the appropriate extension). From there, they can either select “Open” to load the project into the workspace, or “Cancel” to get rid of the window. Again, if their current workspace has not been saved, they will asked if they wish to save first.</p>
+				<img src="../images/open.png">
+				<p>If the user selects “Export”, a window will appear where the user can choose which bars they wish to export, the name of the file, and what file type they wish to export to. There will be a checkbox that should be checked on default; it is checked when the user wishes to export their entire project. Below the checkbox is a box which allows users to select specific bars of the project to export. This box should be greyed on whenever the checkbox is checked. From this window, they can choose “Cancel” to cancel, or “Export” again, which will bring up a window similar to “Save As” that allows the user to select the file location and change the name of the file they are exporting. Again, they are able to select “Save” or “Cancel” from this window.</p>
+				<img src="../images/export settings.png">
+				<p>Lastly, if the user selects “Exit”, the program will exit (ie. all windows will close and the program will terminate). Again, if the user has not saved their workspace, they will be asked if they wish to save first.</p>
+				
+				<h3>Edit Menu</h3>
+				<p>The Edit menu consists of drop-down items “Add audio track”, “Add MIDI track”, “Delete track”, “Split track” (control-T), “Join clips“, “Copy” (control-C), “Duplicate” (control-D), “Cut” (control-X), “Paste” (control-V), “Undo” (control-Z), “Redo” (control-Y), “Snap to Grid”, “Enable Quantization”, and “Quantize” (control-W), in that order.</p>
+				<img src="../images/AURIO - Edit Menu.png">
+				
+				<h3>Requirements: Add, delete, split, and join tracks</h3>
+				<p>If the user selects “Add audio track”, an audio track will be added to the workspace. It will be empty and it’s default input will be the built-in computer microphone (if any), or the most-recently plugged in microphone.</p>
+				<p>If the user selects “Add MIDI track”, a MIDI track will appear in the workspace. It will also be empty and it’s default input will be the computer’s keyboard (if any), or the most-recently plugged in MIDI controller.</p>
+				<p>If the user selects “Delete track” (or presses backspace or delete on their keyboard) and no track is selected in the workspace, a pop-up will appear saying “Cannot delete track: No track selected.”</p>
+				<img src="../images/AURIO - Delete Track Error.png">
+				<p>If a track is selected when the user selects “Delete track” (or presses backspace or delete on their keyboard), a pop-up will appear asking the user if they are sure they wish to delete the track, and the track name will be given.</p>
+				<img src="../images/AURIO - Confirm Track Deletion.png">
+				<p>If the user selects “Split track” and no track is selected in the workspace, nothing will happen. If the user selects “Split track” when a track is selected, and if the marker falls on a clip in that selected track, then that clip will be split into two sections about the marker.</p>
+				<div class="row">
+					<div class="column">
+						<img src="../images/AURIO - Split Clip 1.png" style="width:25%">
+						<img src="../images/AURIO - Split Clip 2.png" style="width:25%">
+					</div>
+				</div>
+				<p>If the user selects “Join clips”, the program will enter Join Mode. Once Join Mode is on, the item “Join clips” will become “Exit join mode” in the menu list. In order to exit Join Mode, the user can press the escape character on their keyboard, or select “Exit join mode”. Users can then select any two adjacent clips in a track and the program will join the clips into one and exit Join Mode. It is important to note that users cannot select clips across multiple tracks, or which are not adjacent. If the two clips have empty space between them, the empty space is included in the join, but will remain empty (no midi, no audio) in the merged clip.</p>
+				<div class="row">
+					<div class="column">
+						<img src="../images/AURIO - Join Clips 1.png" style="width:25%">
+						<img src="../images/AURIO - Join Clips 2.png" style="width:25%">
+					</div>
+				</div>
+				<p>During Join Mode, when a user hovers over any clip, the clip will become outlined in light blue. When the user’s mouse moves away from the clip, the highlight will disappear.</p>
+				
+				<h3>Requirements: Cut, copy, undo, and redo changes easily</h3>
+				<p>If the user selects “Copy” and no clip is selected, nothing happens. If there is a clip selected, that clip will be copied to the internal software.</p>
+				<p>If the user selects “Duplicate” and no clip is selected, nothing happens. If there is a clip selected, a second copy of that clip will appear directly adjacent to the selected clip, and the copy will be automatically selected. If the copy of the clip overlaps with another clip, it will delete all parts of the other clip it overlaps with.</p>
+				<div class="row">
+					<div class="column">
+						<img src="../images/AURIO - Duplicate Clip 1.png" style="width:25%">
+						<img src="../images/AURIO - Duplicate Clip 2.png" style="width:25%">
+					</div>
+				</div>
+				<p>If the user selects “Cut” and no clip is selected, nothing happens. If there is a clip selected, that clip will be deleted from where it is and copied to the internal software.</p>
+				<p>If the user selects “Paste” and there is no clip copied in the internal software, or no track is selected, nothing happens. If there is a clip and a track is selected, that clip will be pasted to the track, and the beginning of the track will start where the marker lies.</p>
+				<p>“Undo” and “Redo” act identically to how they perform in many existing programs. “Undo” will undo the last event performed, while “Redo” will redo it.</p>
+				<p>If the user selects “Snap to Grid”, then snapping to the timeline will be enabled, as outlined in Settings, and the menu item will show a dot beside it to signify that snapping to grid is on. When clicked again, snapping to grid will be disabled and the dot will disappear. Similarly, if the user selects “Enable Quantization”, then quantization will be enabled, as outlined in Settings, and the item will become “Disable Quantization”. If the user selects “Disable Quantization”, quantization will be disabled and the item text will revert to “Enable Quantization”.</p>
+				<p>Lastly, if the user selects “Quantize” or uses the keyboard shortcut control-W, and if a MIDI clip is selected, then the MIDI notes of the clip will be quantized as per the quantization settings (outlined in Settings).</p>
+				
+				<h3>Plugins Menu</h3>
+				<p>The plugins menu is a drop-down list with the items “Open TWYX”, and “View Installed Plugins”. If the user selects “Open TWYX”, a separate window will appear with AURIO’s plugin shop, TWYX.</p>
+				<img src="../images/AURIO - Plugins Menu.png">
+				
+				<h3>Requirement: Ability to uninstall plugins</h3>
+				<p>If the user selects “View Installed Plugins”, a separate window will appear with all plugins which the user currently has installed. The name of each plugin will be listed along with a button beside each plugin which reads “Uninstall”. This allows users to easily uninstall plugins without having to hunt down specific files or worry about dependencies.</p>
+				<img src="../images/AURIO - Viewing Installed Plugins.png">
+				
+				<h3>Help Menu</h3>
+				<p>The Help menu is a drop-down list with the items “Turn on Help” and “Tutorial”.</p>
+				<img src="../images/help.png">
+				
+				<h3>Requirement: Ability to enable helper panel</h3>
+				<p>If the user selects “Turn on Help”, a small panel will appear in the bottom left-hand corner, pushing the libraries section up. Additionally, the “Turn on Help” item will be changed to “Turn off Help”. Once Help mode is on, if the user holds down the alt key on their keyboard, their mouse will turn into a small question mark. If the user clicks on a button, item, or area of the workspace with the question-mark cursor, information is displayed about that object in the panel. To exit Help mode, the user can enter the Help menu and select “Turn off Help”, or click the “X” symbol on the Help panel.</p>
+				<img src="../images/AURIO - Help Enabled v2.png">
+				<p>If the user selects “Tutorial”, a pop-up will appear asking the user if they would like to walk through the beginner tutorial. The user then has the choices of “YES” or “NO”.</p>
+				
+				<h3>Requirement: Ability to view and adjust tempo of the song</h3>
+				<p>In a very clear box in the top right hand corner of the screen, alongside our play and pause buttons, the beats per minute (BPM) and time signature are displayed. The values are modifiable by clicking them.</p>
+				<p>Inside the tempo box is a small metronome icon encapsulated in a button. When pressed, the metronome is turned on, which can be easily identified as the button will have an “indented” or “pressed” looked. When toggled off, the metronome will be turned off and the button will no longer look pressed.</p>
+				
+				<h3>Tracks</h3>
+				<p>Each track has a “Track Master” section on the right hand side, which is easily identifiable as it is darker in colour compared to the rest of the program. Here, the user can change the track’s name, mute the track, show the filter curves, begin recording, and change track input.</p>
+				
+				<h3>Requirement: Ability to record MIDI and audio</h3>
+				<p>Users must be able to record both MIDI and audio. This is done by clicking on the record button on each track in the workspace. Separate record buttons for each track were chosen instead of one large record button because one recording button can result in ambiguous situations where the program must ask for clarification on what is being recorded. To remove any possibility of ambiguity surrounding recording, each track has a corresponding record button.</p>
+				<img src="../images/record.png">
+				<p>Once the user clicks on a record button, that track will be highlighted in light blue and the record button will begin to flash. Additionally, the play button at the top will turn into a stop button, which is also highlighted, further notifying the user that they are now recording. The track marker (shown in cyan in the image above) will mark where the user is currently recording. In this case, the user has recorded about two bars of a MIDI track named “full yeetus”, and will continue to record from left to right until the user either:</p>
+				<ul>
+					<li>clicks the stop button at the top</li>
+					<li>clicks the recording track’s record button</li>
+					<li>presses the spacebar (analogous to clicking the stop button)</li>
+				</ul>
+				<p>Note that the record button is the standard “red dot” icon; this is used for universal recognition.</p>
+				<p>Each track has a combobox or drop-down menu specifying the track’s input. On audio tracks, this will be microphones that the computer has detected (either external or built-in). For MIDI tracks, this will be any detected MIDI instruments, such as a MIDI keyboard. Users can select the input they wish to record from.</p>
+				<p>When instruments or audio input is first detected by AURIO, a small notification will appear at the very bottom of the window. In this manner, the notification is unobtrusive but the user still receives feedback that their recording device has been recognized.</p>
+				<img src="../images/AURIO - Mic Detected.png">
+				
+				<h3>Requirement: Independent volume and panning control for each track</h3>
+				<p>Volume can be adjusted for each track using the horizontal slider with a “-” and a “+” on either side of it. Sliding the slider toward “-” will decrease track volume; sliding toward “+” will increase track volume. Similarly, each track’s panning can be adjusted as well using the horizontal slider with “L” and “R” on either side of it. Sliding toward “L” will pan to the left; sliding toward “R” will pan to the right.</p>
+				
+				<h3>Requirement: Ability to mute tracks</h3>
+				<p>Tracks can be muted by toggling the sound icon in their Track Master section. A sound icon which is not crossed out indicates that the track is not muted. When the icon is toggled, the sound icon becomes crossed out which indicates that the track is now muted.</p>
+				
+				<h3>Requirement: Ability to adjust filters through an intuitive filter curve</h3>
+				<p>In the Track Master section for each track is a checkbox. When the checkbox is checked and a filter is selected for that track, the filter curve for that track will be shown on top of the track’s clips. The default curve will be a flat line spanning the whole track, which represents the numerical value of that filter. If a user drags the curve upward, a new point will be created where the user dragged. If the user double clicks any point, it will be deleted.</p>
+				<img src="../images/filter curves.png">
+				
+				<h3>Requirement: Waveform display for audio tracks</h3>
+				<p>Each audio track will be represented with visible audio waves while MIDI tracks will be represented as lines showing the length of notes as well as the tone in a large window in the center of the workspace. A scrolling marker (coloured cyan in our example) will lay on top of the all tracks to keep time position. Above the multiple tracks will be a the timeline, where each vertical line represents the end and beginning of a single bar. The marker can be dragged in the main track window to change the position as well.</p>
+				<p>The track window also allows automatic and manual zoom functionality. If users add new tracks, the new track would be added to the bottom of the existing tracks and the tracks will visually compress vertically in order to “make room” for the new track. This would stop when vertically compressing the tracks would make the tracks too small to practically work with, in which case the new tracks will not compress the others, and could be seen by vertically scrolling through the track window.</p>
+				<p>The entire timeline and workspace can be condensed and expanded horizontally by manipulating the slider just above the timeline. Sliding toward the minus sign (“-”) will condense the timeline such that bars are shown in much less space horizontally and the bar indicators are much closer together. Oppositely, sliding toward the plus sign (“+”) will expand the timeline horizontally, such that clips occupy more space horizontally and there is more space between the bar indicators.</p>
+				<div class="row">
+					<div class="column">
+						<img src="../images/AURIO - Zoom 1.png" style="width:25%">
+						<img src="../images/AURIO - Zoom 2.png" style="width:25%">
+					</div>
+				</div>
+				
+				<h3>Requirement: Ability to easily loop tracks</h3>
+				<p>When the user’s mouse hovers on the upper right-hand corner of a clip, it will turn into a repeat symbol (a circular arrow which points toward itself). Once the cursor has changed to the repeat symbol, the user can drag that corner of the clip horizontally to continuously repeat or loop the clip.</p>
+				<div class="row">
+					<div class="column">
+						<img src="../images/AURIO - Clip Loop 1.png" style="width:25%">
+						<img src="../images/AURIO - Clip Loop 2.png" style="width:25%">
+					</div>
+				</div>
+				
+				<h3>Quick Menu</h3>
+				<p>At the top of the workspace are the jump to beginning button, play/stop button, and the jump to end button, shown respectively from left to right. The “jump to beginning” button moves the marker to the very beginning of the project (ie. the beginning of the first bar). The “play/stop” button will show a play icon when the project is not being played and a stop icon when the project is being played or a track is being recorded. The “jump to end” button will move the marker to the end of the last clip.</p>
+				<p>Below these three buttons lies the Quick Menu. The Quick Menu is a small collection of buttons which perform actions otherwise found in the Menu bar or by keyboard shortcuts. For example, the Quick Menu contains a button to “Add Audio Track”. This can also be achieved by accessing “Edit > Add Audio Track” from the Menu bar. The Quick Menu contains the following buttons: “Add Audio Track”, “Add MIDI Track”, “Delete Track”, “Split Track”, and “Join Tracks”.</p>
+				<p>The Quick Menu is designed for easy access to common actions. It provides a simple interface for beginners to quickly find actions they wish to perform, especially since beginners may not know where to look in the Menu bar to find these items and they likely will not know the keyboard shortcuts.</p>
+				
+				<h3>MIDI/Filter Section</h3>
+				<p>The MIDI/filter section is located at the bottom of the window below the last viewable track. It contains two tabs: MIDI and filters. When the MIDI tab is chosen and a MIDI clip is selected, the MIDI for that clip is displayed in the section and the user is able to modify the track’s MIDI by hand (without an external MIDI controller) by clicking in notes. If the user clicks a spot where there is no note, a new note will be added with length of the unit of quantization (as specified in Settings). The user can drag the ends of the note to change the note’s length. The user can also drag the note to change its pitch. If the user double-clicks on an existing note, the note will be deleted.</p>
+				<p>The user is able to scroll horizontally to view all the MIDI notes through a scroll bar at the bottom. The scroll bar only becomes visible when the user’s mouse hovers over it.</p>
+				<img src="../images/MIDI.png">
+				<p>When the filter tab is chosen and a track is selected, that track’s filters are displayed in the section side by side. These filters can be modified through their sliders and dials in the section.</p>
+				
+				<h3>Requirement: Ability to edit filters through a simple dial/slider system</h3>
+				<p>Filters come with their own properties, which can be easily manipulated through a series of dials, sliders, and drag-able components. For example, a simple reverb filter has a slider to apply the filter from 0% to 100%.</p>
+				<img src="../images/filters.png">
+				
+			  <h2>Plugins</h2>
+				<h3>Requirements: ability to search and install plugins</h3>
+				<p>If a user desires a new plugin outside the existing functionality of the base AURIO download, they can go to the “plugins” menu and select “Open TWYX”. This takes the user to a “storefront” of compatible plugins and filters for AURIO.</p>
+				<img src="../images/plugin_featured.png">
+				<p>Each store contains short lists of the following categories: “Featured”, “Highest Rated”, “Most Downloaded”, and “Genre”. At the top right of the page is a search tool which accepts the names of the plugins or other descriptive keywords such as “latin” or “jazz” to search for items.</p>
+				<img src="../images/TWYX - Searching.png">
+				<p>The user can click the name of a plugin to be brought to a specific page for the item. This page contains information about the item and the option to install the item. Pressing install on the item’s page will add the item to the user’s library, which is now able to be used in any of the user’s projects.</p>
+				<img src="../images/TWYX - Plugin Page.png">
+				<p>The main purpose of TWYX is to allow easily accessible extensions to the AURIO experience for intermediate and advanced users who desire something more, without taking away the simple, uncluttered experience for pure beginners. Even so, the storefront should be easy to navigate for beginners who are eager to learn, and who need a simple system to get the sounds they want.</p>
+				
+			  <h2>Libraries</h2>
+				<p>The Library section is located on the left-hand side of the window. Here, the user will find two tabs: one labeled “Library” and one labeled “Filters”.</p>
+				
+				<h3>Requirement: Ability to easily access audio samples and loops which are organized</h3>
+				<p>Selecting the Library tab will open up the sound library. Any sounds that are pre-installed, installed via plugins, or installed by the user externally will show up in this tab. These sounds are organized by type (eg. Strings, Synths, Loops, FX, etc.) and alphabetically in an accordion-style layout, with the exception of Misc placed at the bottom. When the user selects the header (eg. Strings), the section with expand to show the sounds categorized under that header (eg. Viola Solo and Viola Section Legato). Clicking on the header will toggle this expansion.</p>
+				<p>If there are too many sections and/or sounds to comfortably fit in the panel, a scroll bar will appear and the user can scroll down to view the rest of the sections and/or sounds.</p>
+				
+				<h3>Requirement: Basic library of sounds and ability to search sounds</h3>
+				<p>AURIO comes with a basic library of sounds already installed for ease of use. This way, beginners do not already need to have sound packs downloaded in order to begin creating music.</p>
+				<p>In the Library tab, there is a search bar located at the top of the section, just under the tab header. Here, users can search downloaded sounds by type and keyword.</p>
+				
+				<h3>Requirement: Basic library of filters and ability to search filters</h3>
+				<p>Selecting the Filters tab will open up the filters library. Any filters that are pre-installed or installed via plugins will show up in this tab. Filters are organized alphabetically from A to Z. If there are too many filters to fit in the panel, a scroll bar will appear and the user can scroll vertically to view all filters.</p>
+				<p>AURIO comes with a number of common filters pre-installed. These include Audio Filter, EQ, Reverb, and Delay, among others.</p>
+				<p>Similarly to the library of sounds, there is a search bar in the Filters tab as well. Users can search for specific filters through keywords.</p>
+				
+				<h3>Requirement: Ability to drag and drop samples and filters</h3>
+				<p>AURIO’s primary goal is ease-of-use, and what could be more intuitive than simply dragging something to its destination? Thus, AURIO is designed so that users can simply drag samples into their preferred track.</p>
+				<p>If the user drags a sound sample to an audio track, the track will become highlighted so that the user receives feedback on which track they are attempting to add the sample to. The sample will become a slightly transparent as the user drags it over the track; this allows the user to roughly see the length of the sample and place the starting point accurately on the track timeline.</p>
+				<img src="../images/AURIO - Sample Dragging.png">
+				<p>Once the user lets go of the mouse (ie. stops dragging), the sample will appear fully coloured and labeled on the track timeline. If it overlaps with any other clips, the overlaps of the other clips will be truncated and the newly added clip will remain in its full length. If the user lets go of the clip anywhere that is not on an audio track, the greyed out block will disappear and nothing will happen.</p>
+				<p>If the user drags a sound sample to a MIDI track, the track will use the sound sample for its MIDI. A filter is automatically added that shows the audio waves of the sample and allows the user to select which parts of the sample they wish to use (by default, it is the whole sample).</p>
+				<img src="../images/MIDI_filters.png">
+				<p>If a user double clicks a sound sample and a MIDI track is selected, the selected track will use the sound sample for its MIDI. The same procedure is realized as when a user drags a sound sample to a MIDI track. If a MIDI track is not selected, nothing happens.</p>
+				<p>If a user double clicks a filter and track is selected, the filter will appear in the filter section for that track. If no track is selected, nothing happens.</p>
+				
+			  <h2>Miscellaneous</h2>
+				<h3>Settings</h3>
+				<p>The “settings” button in the home menu allows the user to configure certain parts of the DAW. Here, users can turn on or off “Snap to Grid” and adjust the intervals of the timeline (eg. 1 bar, half a bar, a quarter note, etc.). “Snap to Grid” allows users to align clips easily with the beginning or end of timeline interval. If the user moves the clip close to an interval start or end, the start or end of the clip (whichever is closest) will snap to the start or end of the interval.</p>
+				<img src="../images/AURIO - Settings Menu.png">
+				<p>Users can also toggle quantization in the settings menu. All MIDI that is recorded while quantization is on will fit itself to the unit of quantization (quarter notes, eighths, sixteenths, or thirty-secondths). For example, if the quantization unit is set to quarter notes, all notes recorded would snap to a length evenly divisible by a quarter note.</p>
+				<p>Users can also adjust the metronome volume. The horizontal slider under the heading “Metronome Volume” represents the volume, where sliding to the left decreases volume, while sliding to the right increases volume.</p>
+				<p>Users can also customize the quick menu from settings. This will bring up a pop-up where the user can drag multiple quick menu items to and from a virtual quick Menu bar. The user can close the window by clicking the “Click Window” button.</p>
+				<img src="../images/quick menu.png">
+				
+			  <h2>Contributions</h2>
+				<h3>Adeline</h3>
+				<ul>
+					<li>Wrote most of the document</li>
+					<li>Edited and made a bunch of mockups, specifically in the configuration section</li>
+					<li>Did final lookover, editing, formatting, and upload to our website</li>
+				</ul>
+				
+				<h3>Graeme</h3>
+				<ul>
+					<li>A bit of preliminary specifications writing for the UI</li>
+					<li>A pile of mockups: small changes to the default UI, some of the main Menu bar and their functionality, clip editing, everything about plugins+TWYX, settings menu</li>
+					<li>Some of the writing on conceptual models/interface metaphors</li>
+				</ul>
+				
+				<h3>John</h3>
+				<ul>
+					<li>Preliminary design of Configurations mockup</li>
+					<li>Preliminary design of Project Mockup</li>
+				</ul>
+				
+				<h3>Ethan</h3>
+				<ul>
+					<li>Wrote some interface metaphors</li>
+					<li>Assisted in editing the website</li>
+				</ul>
+				
+				<h3>Ryley</h3>
+				<ul>
+					<li>Wrote some requirements in paragraph form</li>
+					<li>Conceptual Models</li>
+				</ul>
+				
             </div> <!-- end of phase two -->
 
             <div class="team-container animate-bottom" id="team">
