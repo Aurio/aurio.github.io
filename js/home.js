@@ -1,6 +1,6 @@
 /* display timer */
 function displayTimer() {
-  var countDownDate = new Date("Feb 24, 2019 23:00:00").getTime();
+  var countDownDate = new Date("Mar 14, 2019 23:00:00").getTime();
 
   var update = setInterval(function() {
     
