@@ -60,6 +60,7 @@ function hideAllPages() {
   hidePage('home');
   hidePage('phase-one');
   hidePage('phase-two');
+  hidePage('phase-three');
   hidePage('team');
   hidePage('contact-us');
 }
