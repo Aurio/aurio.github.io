@@ -64,6 +64,7 @@
               <li><a id="link-home" onclick="showOnePage('home');return false;">Home</a></li>
               <li><a id="link-phase-one" onclick="showOnePage('phase-one');return false;">Project Phase 1</a></li>
               <li><a id="link-phase-two" onclick="showOnePage('phase-two');return false;">Project Phase 2</a></li>
+                <li><a id="link-phase-three" onclick="showOnePage('phase-three');return false;">Project Phase 3</a></li>
               <li><a id="link-team" onclick="showOnePage('team');return false;">Team</a></li>
               <li><a id="link-contact-us" onclick="showOnePage('contact-us');return false;">Contact Us</a></li>
             </ul>
@@ -610,9 +611,128 @@
 					<li>Wrote some requirements in paragraph form</li>
 					<li>Conceptual Models</li>
 				</ul>
-				
             </div> <!-- end of phase two -->
 
+            <div class="phase-three animate-bottom" id="phase-three">
+                <h1>Phase III: Prototype</h1>
+                <h2>Preface</h2>
+                <p>While this report can be read as a standalone document, we encourage the reader to follow along with the online prototype demo! The demo can be found at:
+                      https://www.figma.com/proto/XfA59Am1c2IrOunHlGkojp4u/AURIO?node-id=0%3A1&scaling=min-zoom</p>
+
+                <h2>Introduction</h2>
+                <p>In this phase of development, our goal for AURIO is to begin bridging the gap between a static set of mockups and a functioning prototype. Since AURIO is a DAW, a natural first step for building a working prototype might be to implement some of its audio-based functionality; this is where we run into some difficulty. An overwhelming majority of current prototyping tools lack any sort of audio integration, Balsamiq Mockups included. Because of time and budget constraints at Project JAGER, we have made the decision to temporarily shelf audio integration for early AURIO prototypes. With this decision, we hope to be able to focus on creating a more cohesive and immersive prototype experience for potential users.<br><br>
+                      This aside, we can begin properly outlining the design of AURIO’s first prototype. In general, our goal for this phase is to begin implementing our user interface and some of the more basic functions described in the design phase. This includes menu and button functionality, as well as screen transitions when applicable. While these operations will be largely superficial, they provide users with a general sense of how it will feel to navigate AURIO once it is a finished product. In this sense, our style of prototyping for this phase will be mostly horizontal.<br><br>
+                      Additionally, we have made the decision to move away from using Balsamiq Mockups as we used in the design phase in favour of Figma. While Balsamiq is an effective tool for UI design, we felt it was lacking in terms of what it could provide for an actual working prototype. Switching to Figma gives us much more flexibility with both the aesthetics and user interaction of our prototype, with the end goal being better immersion and understanding of how AURIO will ultimately function. Furthermore, Figma is a web application, which allows us to be more adaptable in our version control, as well as being able to more easily share and demonstrate our prototype with potential users and investors.</p>
+                <h2>Tools and Processes</h2>
+                <p>Project JAGER decided to use Figma to construct a high fidelity prototype due to Figma’s easy-to-learn user interface, range of abilities (including vector graphics), collaboration features, and low cost (free!). Since Figma is a prototyping tool, the end prototype doesn’t have the full interactivity that source code would provide, but is still highly interactive and gives the user a good idea of what a full implementation would feel like. In short, users will be able to have a similar user experience as the end product, even though not all user goals are implemented.<br><br>
+                      Construction of the prototype was done by one member at Project JAGER, who translated the Balsamiq mockup designs into a more tangible and interactive prototype in Figma. We thought it was best that one person worked on the prototype alone so that the end product was as consistent as possible in both looks and transitions. Throughout the construction of the prototype, a live link demoing the prototype was available to all members of Project JAGER. This allowed members to view and interact with the prototype as it was being created; thus, real-time feedback could be given to the creator.<br><br>
+                      The design process, as mentioned above, mainly centered around the translation of Balsamiq mockups to Figma. First, the four main screens were created: Home, Workspace, Settings, and TWYX. Next, the requirements were stepped through, which gave rise to many variants of each of the four main screens, along with transitions between themselves and others. True functionality of some features had to be suspended in the interest of time, effort, and feasibility, but we think the end product is still very faithful to what we envision AURIO to be!<br>
+                </p>
+                <h2>Prototype Description</h2>
+                <p>As noted in the introduction, this prototype will be largely based on basic button and menu functionality, along with the respective screen transitions for each of these. In an effort to avoid redundancy with the development phase 2 report, we will mostly restrict ourselves to describing the interactive aspects of the prototype in this section. <br><br>
+                    We will start with the home screen, since this is the first screen every user sees when launching AURIO. The amount of interactions possible for this screen are intentionally minimalist; we want to avoid any unnecessary clutter of the screen whenever possible. From here, the user can navigate with a button press to a project workspace, the beginner tutorial, or to manage settings.<br><br>
+                </p>
+                <!-- first image -->
+                <p>In the settings menu, our methods of interaction begin to branch out. We use a variety of sliders, checkboxes, and text fields in order to give an appropriate interaction medium for each setting. For example, in the “Metronome” section, we use a slider to adjust the volume of the metronome; this simulates interacting with a physical volume slider, such as one found on a mixing board. Additionally, customizing the quick menu is our first occurrence of dragging and dropping, which is a fundamental form of direct manipulation. We set up the quick menu customization screen so that when the user adds or removes a button from the quick menu, they are given immediate visual feedback to see how the new menu looks.</p>
+                <!-- second image -->
+                <p>Once the user reaches the actual project workspace screen, the number of UI elements and functions the user can interact with increases dramatically, so it becomes very important to keep the screen as organized and intuitive as possible. As was referenced in the design phase, the desktop interface metaphor is very important for keeping this interface organized: the main workspace is in the centre of the screen, being the track timeline, and the edges of the screen are populated with tools than the user can click, drag and drop, or slide to interact with.</p>
+                <!--image 3-->
+                <p>Finally, TWYX, our plugin management platform, is made to be quick and simple to use, with again a focus on limiting unnecessary information whenever possible. Once a user navigates to TWYX, they can choose to browse plugins either by typing in key phrases in the search box, or by clicking through tabs and manually navigating through lists. Clicking an entry displays more information about that plugin, and gives a button to download and install said plugin.</p>
+                <!-- image 4-->
+                <h2>Prototype Limitations</h2>
+                <p>While Figma provides us a far more flexible framework, the platform does still have its limitations. The elephant in the room in terms of this is of course the prototype’s lack of audio integration. This limitation however is not completely irreparable; in the case of doing in-person demonstrations and observational studies, we would be able to use a “Wizard of Oz” scheme to simulate the audio recording and editing that our prototype currently lacks. <br><br>
+                    In addition, due to the inherent size and scope of designing a DAW, many of our prototypes interactions will be superficial, and won’t have a significant impact on how the prototype runs, barring some visual changes or screen transitions. This is less of an issue than the abovementioned lack of audio, since the sheer number of small interactable elements in a DAW means that each one has a relatively small impact on the actual user interface. In this sense, the user can freely interact with dummy buttons, menus, and checkboxes without breaking the immersion of the prototype.
+                </p>
+
+                <h2>Connecting the Prototype to Requirements</h2>
+                <p>Note: Requirements that are not yet implemented are denoted with the tag [NYI]. Anything that is even superficially implemented will not be tagged as such.</p>
+                <h3>Requirement: Ability to walk through a beginner tutorial [NYI]</h3>
+                <p>Upon launching AURIO for the first time, the user will be prompted with the option to walk through a beginner tutorial. If the user selects yes, the tutorial commence. If the user selects no, the pop-up will disappear, revealing the four simple tiles. To convenience the user, one of the tiles will be open the beginner tutorial again in case the user would like to revisit the walkthrough.<br><br>
+                    The startup page will make use of mainly muted primary colours to create a bright, approachable feeling. The choice of colours and layout provides a non-intimidating experience, by using the familiarity of doors that aren’t harsh in colour.
+                </p>
+                <h3>Requirement: Ability to Differentiate Between Audio and MIDI tracks</h3>
+                <p>Audio and MIDI tracks are differentiated by an ‘A’ or an ‘M’ symbol, respectively. This indicator is presented to the left of the track name in the track information box, found on the right side of each track. This is an notification that can be dismissed by novice producers but will be exceedingly useful for advanced users. Audio and MIDI tracks can also be differentiated through the waveform found on the track itself. With MIDI tracks showing the key map and the samples showing the waveform presentation. Each representation will be unique to the track but the two categories can quickly be differentiated by intermediate users.</p>
+                <h3>Requirement: Main Menu Bar</h3>
+                <p>The main menu bar is presented as a top navigation bar, with each drop down menu categorically split up with bold line to help the user differentiate tasks. For example, in the “File” option there are six options: “Save”, “Save As”, “Open Recent”, “Open”, “Export”, “Exit”. The  categories are: {Save , Save As},  {Open Recent , Open}, {Export}, {Exit}.  Splitting up options by category means that users do not need to memorize the locations of individual functions but of overall task type. This reduces the initial cognitive stress encountered by learning a new platform.</p>
+                <h3>Requirement: Ability to Uninstall Plugins</h3>
+                <p>Plugins can be uninstalled through the “Plugins” Menu option under the “View Installed Plugins” option. Each plugin name will then be listed beside two columns. One checkbox for the enabled column and an option to uninstall. This allows users to easily enable/disable/uninstall plugins without worrying about dependencies or searching for specific files. This three step interaction uses the navigation menu to arrive at a checklist type method of interaction. The checklist method of interaction is an analogy for a shopping list, allowing users to view their plugins in alphabetical order. “Checking” the enabled checkbox if they wish to have the plugin functional, and “Crossing Off” the plugin with the uninstall button.</p>
+                <h3>Requirement: Ability to Enable Helper Panel</h3>
+                <p>The help function will be kept in the taskbar for easy access, as is similar to most software that have a help feature. To turn on help, simply select “Turn on Help” from the dropdown menu of Help. <br><br>
+                    Continuing with the design goal of “less is more”, the helper panel will be placed in the bottom left corner of the screen, reducing the area of the accordion libraries to give the help box its own section without being intrusive. By holding down the alt key on your keyboard, the cursor will be replaced by a question mark to signal that the user is now in “help mode”. By clicking on a button, item, or area of the workspace in “help mode”, the help box in the bottom corner will display information on what was clicked.
+                    To exit, simply select “Turn off Help”, which is the same button titled “Turn on Help”. This allows us to reduce buttons in the dropdown menu and reduce complexity.</p>
+                <h3>Requirement: Ability to View and Adjust Tempo of the Song</h3>
+                <p>In the top right hand corner of the screen there is a tempo box that contains the information for the tracks tempo. There will be text fields that the user can manipulate for beats per minute (BPM) and time signature. The values will always be displayed so desired adjustments can be easy to do by manipulating the existing values.<br><br>
+                    There is also a metronome button that plays a metronome in time with the tempo of the song. To activate it, press it like a button by clicking on the icon that looks like a metronome. When pressed, the icon will appear “indented”, and metronome will play. By pressing again, the icon will appear “unindented” and the metronome will stop.
+                </p>
+                <h3>Requirement: Ability to Record MIDI and Audio [NYI]</h3>
+                <p>At the end of each bar will be a box with tools to manipulate the track. Within this box will be the record button for that specific track. The button will be a standard record symbol; a red circle. When a track is recording, the corresponding record button will be highlighted brighter and begin to flash. The track that is being recorded will also be highlighted brighter than the rest of the tracks with a light blue shading. A bright track marker will show where the recording is currently happening. The recording will end once the user has clicked the flashing record button or the user has pressed the spacebar. This will remove the highlighting from the track and stop the record button from flashing, confirming that recording has stopped and that the workspace has returned to normal.<br><br>
+                    To use an external instrument device, plug in the device to the computer and a small popup will appear at the bottom of the screen confirming that the instrument is connected and functioning. The popup will stay on screen for only a few seconds: enough time for the user to recognize that their device is indeed plugged in and working, without being intrusive.
+                    By making use of shading, the track that is being recorded will drag the user’s attention to be explicit of what is being recorded.
+                </p>
+                <h3>Requirement: Independent Volume and Panning Control for Each Track</h3>
+                <p>Individual track volume and panning can be adjusted in the track information box with a simple slider</p>
+                <h3>Requirement: Ability to Mute Tracks</h3>
+                <p>Tracks will be mutable through the sound icon button present in the bottom left of the track information box. This button is toggleable between a crossed out and normal state, indicating muted and unmuted states respectively.</p>
+                <h3>Requirement: Ability to Adjust Filters Through an Intuitive Filter Curve</h3>
+                <p>In the track information box is a checkbox. Whenever that checkbox is checked and a filter is selected for that track a filter curve will be overlayed onto the track. This curve will then able to be edited through the creation and deletion of nodes. These nodes can be dragged up or down and will directly adjust the selected filter accordingly.</p>
+                <h3>Requirement: Waveform Display for Audio Tracks</h3>
+                <p>The sample on the track will be shown with the audio profile overlayed on the coloured graphic. MIDI samples will be displayed with their button input. When a new track is added the field of view of the tracks would vertically compress, allowing for the user to see all of the tracks. This would keep compressing until the number of tracks viewed reached a maximum. After that a scrollbar would appear on the left allowing for the user to scroll through all of their tracks.
+                    The entire track can be zoomed in and out of through a slider above the timeline.
+                </p>
+                <h3>Requirement: Ability to Easily Loop Tracks [NYI]</h3>
+                <p>When the user scrolls over the top right corner of a given sample it will turn into a repeat symbol. Once this symbol is observed the sample will be extendable, with the track automatically looping itself as far as the user drags it. The use of the common symbol immediately communicates to digitally experienced individuals the functionality of this action.</p>
+                <h3>Requirement: Ability to Edit Filters Through a Simple Dial/Slider System</h3>
+                <p>Filters have internal settings controlling the strength of certain effects.These effects are controlled through a simple slider system. These sliders are percentage based from 0% to 100%. The overall filter strength can be adjusted from the track that it is applied.</p>
+                <h3>Requirement: Basic Library of Sounds and Ability to Search Sounds</h3>
+                <p>The sound library functionality is provided on the left side of the screen with a toggleable button that switches the search between a search for sounds and filters. The search bar will be presented above the instrument menu. MIDI and recorded tracks will be optionally saveable and will be inserted by the user into the library if they wish to have the sample available for future projects.</p>
+                <h3>Requirement: Ability to Easily Access Organized Audio Sample and Loops</h3>
+                <p>Sounds are organized by type alphabetically. For example “Strings” is before “Synths”. Once a type is selected it will expand vertically in an accordion style to show individual samples. These samples can then be dragged onto the desired track. This expansion allows the user to maintain a focus in the same area of the screen while the samples are presented to them where they were previously looking. The lack of a seperate menu allows users to maintain one method of interaction for the entire search, providing a seamless experience.</p>
+                <h3>Requirement: Basic Library of Filters and Ability to Search Filters</h3>
+                <p>Filters can be searched through effect name and produced effect. The interactive experience is very similar to the sound library. The standard library of filters will be available upon release, but users will be able to upload and create their own filters through plugins. But this option will not be presented to basic users.</p>
+                <h3>Requirement: Ability to Drag and Drop Samples and Filters</h3>
+                <p>The user can add or remove audio samples to tracks through simple drag and drop functionality. By dragging the sample to a desired track the user will be informed which track they are attempting to add to. The sample will also become transparent allowing the user to properly inserting the track at the correct time stamp. Once the user lets go of the mouse the sample will become opaque and and labelled on the track.
+                    If the user drags a filter onto a track it will be integrated into the track on release.
+                </p>
+
+                <h2>Assessing Usability Goals</h2>
+                <h3>Effectiveness</h3>
+                <p>At its core, AURIO™ should be a functional, well-oiled DAW. Simplicity and ease of use mean nothing if the underlying software doesn’t work like it should.<br><br>
+                    Our prototype demonstrates the functions we believe should be included in the user interface. Each button is clear and creates a demonstrable effect on the track window or on the user interface. Effective programming and testing of each component will ensure that each button and user interaction works like it is supposed to. Our prototype displays effective functionality of navigation and visual representations of adding MIDI tracks, adding audio tracks, deleting tracks and menu navigation.
+                </p>
+                <h3>Learnability</h3>
+                <p>Many DAW’s are notorious for their steep learning curve; AURIO™ should be the solution. We want AURIO™ to be user friendly and intuitive, even for someone totally unfamiliar with the idea of a DAW.<br><br>
+                    By providing clear labels for functions, and reducing clutter that most DAWs bring to the table, AURIO creates memorable segments of the screen that users can quickly access and learn functions. The quick tool menu allows users to quickly set their favorite tools for easy accessibility. Use of this menu is fast and memorable, allowing the user to easily interchange important tools. Taskbar menu items are uncluttered and labelled by memorable keywords, allowing user to easily make associations to find the tools they need.
+                </p>
+                <h3>Utility</h3>
+                <p>AURIO™ prioritizes being beginner-friendly, but this should never be conflated with being “dumbed down”. AURIO™ should provide advanced functionality to those who seek it, supplementing with plugins when needed. <br><br>
+                    Aurio provides basic functionality from the get-go, providing the necessary tools for any skill level to navigate menus and begin creating track layouts. Libraries can be located with descriptive captions to find basic instruments and filters to apply to tracks. The addition of the TWYX stores adds another degree of functionality to the AURIO workstation. The ability to download filters and instruments to expand on Aurio’s existing functionality raises the potential for experienced users to produce tracks to their standards. The interactions of multiple plugins and sounds provides utility to a variety of users of different experience levels.
+                </p>
+                <h2>Assessing User Experience Goals</h2>
+                <h3>Enjoyment</h3>
+                <p>AURIO™ prioritizes being beginner-friendly, but this should never be conflated with being “dumbed down”. AURIO™ should provide advanced functionality to those who seek it, supplementing with plugins when needed.<br><br>
+                    Aurio provides basic functionality from the get-go, providing the necessary tools for any skill level to navigate menus and begin creating track layouts. Libraries can be located with descriptive captions to find basic instruments and filters to apply to tracks. The addition of the TWYX stores adds another degree of functionality to the AURIO workstation. The ability to download filters and instruments to expand on Aurio’s existing functionality raises the potential for experienced users to produce tracks to their standards. The interactions of multiple plugins and sounds provides utility to a variety of users of different experience levels.
+                </p>
+                <h3>Aesthetically Pleasing</h3>
+                <p>It goes without saying that AURIO™ should be aesthetically pleasing software. To quote The Zen of Python, “Beautiful is better than ugly. Simple is better than complex. Readability counts.”<br><br>
+                    Aurio provides a simplistic, bright, almost hand-drawn interface for the user to interact with. Like drawing, AURIO’s artistic process should begin with a blank slate. As the track grows with tools used and tracks added, the empty space begins filling up, like filling a canvas with point. The less robotic interface style allows a variety of users to understand the interface and not disregard  AURIO due to unfamiliarity or foreignness. Icons, tracks and menus have been designed with the simple design, using bright colors to help paint the canvas that the user sees.
+                </p>
+                <h3>Inspires Creativity</h3>
+                <p>Buried under the goals of user-friendliness and simplicity lies one simple idea: creativity. AURIO™ should inspire users to think more creatively about their audio editing and music production, instead of thinking about how to navigate a complicated UI.<br><br>
+                    Reiterating what was said previously, AURIO provides a simple, aesthetically pleasing design. This simple design not only draws users in, but declutters their workspace so that they can think about the most important thing when using a DAW: creating music. The TWYX storefront encourages users to seek out new sounds and filters, allowing one’s creativity to reach out and grab whatever they need to create their vision. Our prototype showcases these factors, quickly bringing the user back to the main creation space.
+                </p>
+                <h2>Contributions</h2>
+                <h3>Addie</h3>
+                <p>Prototype construction, Tools + Processes.</p>
+                <h3>Ethan</h3>
+                <p>Requirements.</p>
+                <h3>Graeme</h3>
+                <p>Intro, Prototype Description, Prototype Limitations, Proofreading + Editing.</p>
+                <h3>John</h3>
+                <p>Requirements.</p>
+                <h3>Ryley</h3>
+                <p>Usability Goals, User Experience Goals, HTML Conversion</p>
+
+            </div>
             <div class="team-container animate-bottom" id="team">
               <div class="team" id="john-brown">
                 <img class="team-image" src="../images/katana.jpg">
