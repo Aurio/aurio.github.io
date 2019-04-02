@@ -216,6 +216,11 @@ button::-moz-focus-inner {
   display: none;
 }
 
+.phase-four {
+  display: none;
+}
+
+
 * {
   box-sizing: border-box;
 }
