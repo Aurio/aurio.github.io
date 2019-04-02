@@ -1,6 +1,6 @@
 /* display timer */
 function displayTimer() {
-  var countDownDate = new Date("Mar 14, 2019 23:00:00").getTime();
+  var countDownDate = new Date("Mar 28, 2019 23:00:00").getTime();
 
   var update = setInterval(function() {
     
@@ -24,7 +24,7 @@ function displayTimer() {
     /* when count down is finished */
     if (distance < 0) {
       clearInterval(update);
-      document.getElementById("countdown").innerHTML = "Phase II posted";
+      document.getElementById("countdown").innerHTML = "Phase IV posted";
     }
   }, 1000);
 }
